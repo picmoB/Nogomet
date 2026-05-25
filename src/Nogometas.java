@@ -1,6 +1,5 @@
 public class Nogometas extends Sportas implements Comparable<Nogometas> {
     private int brojGolova;
-//    int brojGolova;
 
     public Nogometas(String ime, int brojDresa, int brojGolova) {
         super(ime, brojDresa);
@@ -9,7 +8,7 @@ public class Nogometas extends Sportas implements Comparable<Nogometas> {
 
     @Override
     public int compareTo(Nogometas o) {
-        return Double.valueOf(brojGolova).compareTo(Double.valueOf(o.brojGolova));
+        return Integer.valueOf(brojGolova).compareTo(Integer.valueOf(o.brojGolova));
     }
 
     @Override
