@@ -1,6 +1,6 @@
 public class Nogometas extends Sportas implements Comparable<Nogometas> {
-//    private int brojGolova;
-    int brojGolova;
+    private int brojGolova;
+//    int brojGolova;
 
     public Nogometas(String ime, int brojDresa, int brojGolova) {
         super(ime, brojDresa);
@@ -14,6 +14,6 @@ public class Nogometas extends Sportas implements Comparable<Nogometas> {
 
     @Override
     public String toString() {
-        return "\nSportas - " + "ime: " + ime + "\n broj dresa: " + brojDresa + "\n broj golova: " + brojGolova;
+        return "\nSportas - " + "ime: " + getIme() + "\n broj dresa: " + getBrojDresa() + "\n broj golova: " + brojGolova;
     }
 }
